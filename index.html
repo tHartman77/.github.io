@@ -61,14 +61,14 @@
     </style>
   </head>
   <body>
-      
+
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-        
+
       <main class="mdl-layout__content">
         <div class="demo-blog__posts mdl-grid">
-          
+
             <h1 class="mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">Tim's Christmas List 2016</h1>
-          
+
           <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
               <h3>Suit</h3>
@@ -76,7 +76,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#1</strong></div>
             <div>
-                
+
                 <span>I don't know where to find this...</span>
               </div>
             </div>
@@ -88,8 +88,9 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#2</strong></div>
               <div>
-                
-                <span>2 days ago</span>
+
+                <span><a style="text-decoration:none"class="mdl-color-text--grey-600" href="http://www.bestbuy.com/site/google-google-home-white-slate-fabric/5578849.p?skuId=5578849&ref=199&loc=TnL5HPStwNw&acampID=1&siteID=TnL5HPStwNw-gvnRyQ47WLzwa.VT63Fb_Q">$99-Black Friday,</a>
+                <a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://store.google.com/product/google_home">$130-Google</a></span>
               </div>
             </div>
           </div>
@@ -100,7 +101,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#3</strong></div>
               <div>
-                <span>2 days ago</span>
+                <span>Priceless</span>
               </div>
             </div>
           </div>
@@ -111,7 +112,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#4</strong></div>
               <div>
-                <span>2 days ago</span>
+                <span><a style="text-decoration:none" class="mdl-color-text--grey-600" href="http://www.saucony.com/en/shadow-5000/13967M.html?dwvar_13967M_color=S70033-86#start=1">$60-Saucony</a></span>
               </div>
             </div>
           </div>
@@ -148,15 +149,19 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"><i class="material-icons">print</i></a>
+    <a href="http://google.com" onclick="myFunction()" target="_blank" id="view-source" class= "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"><i class="material-icons">print</i></a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
   <script>
+  function myFunction() {
+    window.print();
+  }
+
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
       var link = el.querySelector('a');
       if(!link) {
@@ -171,4 +176,7 @@
       });
     });
   </script>
+
+
+
 </html>
