@@ -88,7 +88,6 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#2</strong></div>
               <div>
-
                 <span><a style="text-decoration:none"class="mdl-color-text--grey-600" href="http://www.bestbuy.com/site/google-google-home-white-slate-fabric/5578849.p?skuId=5578849&ref=199&loc=TnL5HPStwNw&acampID=1&siteID=TnL5HPStwNw-gvnRyQ47WLzwa.VT63Fb_Q">$99-Black Friday,</a>
                 <a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://store.google.com/product/google_home">$130-Google</a></span>
               </div>
@@ -123,7 +122,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#5</strong></div>
               <div>
-                <span>2 days ago</span>
+                <span><a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://www.amazon.com/Asmodee-SEV-EN01ASM-7-Wonders/dp/B0043KJW5M/ref=sr_1_1?s=toys-and-games&ie=UTF8&qid=1479754930&sr=1-1&keywords=7+wonders">$22-Amazon</a></span>
               </div>
             </div>
           </div>
@@ -134,7 +133,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#6</strong></div>
               <div>
-                <span>2 days ago</span>
+                <span><a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://www.walmart.com/ip/Titanfall-2-Xbox-One/52599739">$30-Black Friday, </a><a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://www.amazon.com/Titanfall-2-Xbox-One/dp/B01GKGVIB2/ref=sr_1_2?s=videogames&ie=UTF8&qid=1479755521&sr=1-2&keywords=titanfall+2">$45-Amazon</a></span>
               </div>
             </div>
           </div>
@@ -145,7 +144,7 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"><strong class="numbers">#7</strong></div>
               <div>
-                <span>2 days ago</span>
+                <span><a style="text-decoration:none" class="mdl-color-text--grey-600" href="https://www.amazon.com/Xbox-LIVE-Month-Gold-Membership-Card/dp/B0029LJIFG/ref=sr_1_1?s=videogames&ie=UTF8&qid=1479755419&sr=1-1&keywords=xbox+live+gold">$50-Amazon</a></span>
               </div>
             </div>
           </div>
@@ -154,17 +153,24 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <a href="http://google.com" onclick="myFunction()" target="_blank" id="view-source" class= "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"><i class="material-icons">print</i></a>
+    <a  onclick="PrintImage('siberian-husky-dog-breed-pictures-9.jpg'); return false;" target="_blank" id="view-source" class= "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"><i class="material-icons">print</i></a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
   <script>
-  function myFunction() {
-      popup = window.open();
-    popup.document.write("siberian-husky-dog-breed-pictures-9.jpg");
-popup.focus(); //required for IE
-popup.print();
-    
-  }
+  function ImagetoPrint(source) {
+    return "<html><head><script>function step1(){\n" +
+            "setTimeout('step2()', 10);}\n" +
+            "function step2(){window.print();window.close()}\n" +
+            "</scri" + "pt></head><body onload='step1()'>\n" +
+            "<img src='" + source + "' /></body></html>";
+}
+function PrintImage(source) {
+    Pagelink = "about:blank";
+    var pwa = window.open(Pagelink, "_new");
+    pwa.document.open();
+    pwa.document.write(ImagetoPrint(source));
+    pwa.document.close();
+}
 
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
       var link = el.querySelector('a');
