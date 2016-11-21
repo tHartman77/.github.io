@@ -15,7 +15,7 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('http://wallpapers1080p.com/wallpaper/walls/1/christmas-tree-snow-night.jpg');
+    background-image: url('http://files.vladstudio.com/joy/christmas_lights/wall/vladstudio_christmas_lights_1024x768_signed.jpg');
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -23,7 +23,7 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('http://wallpapers1080p.com/wallpaper/walls/1/christmas-tree-snow-night.jpg');
+    background-image: url('http://files.vladstudio.com/joy/christmas_lights/wall/vladstudio_christmas_lights_1024x768_signed.jpg');
   }
 }
 @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -31,7 +31,7 @@ body::before {
        (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('http://wallpapers1080p.com/wallpaper/walls/1/christmas-tree-snow-night.jpg');
+    background-image: url('http://files.vladstudio.com/joy/christmas_lights/wall/vladstudio_christmas_lights_1024x768_signed.jpg');
   }
 }
 body .demo-blog {
@@ -190,6 +190,22 @@ body .demo-blog {
 
 .demo-blog .seven-wonders-pic .mdl-card__media {
   background-image: url('http://i.imgur.com/VtFgCsr.jpg');
+}
+
+.demo-blog .husky-pic .mdl-card__media {
+  background-image: url('http://cdn.lookanimals.com/pictures/i22.photobucket.com/albums/b325/Cheryl_Lynn7284/huskypuppydesktopbackground.jpg');
+}
+
+.demo-blog .titanfall-pic .mdl-card__media {
+  background-image: url('http://image.jeuxvideo.com/medias/146581/1465811390-2033-jaquette-avant.jpg');
+}
+
+.demo-blog .xbox-live-pic .mdl-card__media {
+  background-image: url('http://www.cdkeys.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/f/p/fpp_12mo_emea_enuk_fob.png');
+}
+
+.demo-blog .shoes-pic .mdl-card__media {
+  background-image: url('http://static1.squarespace.com/static/532313ece4b08487acaec7a2/t/54d293a7e4b0c2c49c8e2b8e/1423086506432/');
 }
 
 .demo-blog .something-else > button {
